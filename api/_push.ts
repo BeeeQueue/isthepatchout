@@ -21,8 +21,8 @@ export const sendNotification = async (patch: Patch) => {
     .select()
     .eq("environment", process.env.VERCEL_ENV as string)
 
-  const results = await Promise.allSettled(
-    data!.map(async ({ endpoint, auth, p256dh }) => {
+  const results = await Promise.allSettled([
+    ...data!.map(async ({ endpoint, auth, p256dh }) => {
       const patchData: PushEventPatch = {
         type: "patch",
         ...patch,
@@ -36,7 +36,10 @@ export const sendNotification = async (patch: Patch) => {
         JSON.stringify(patchData),
       )
     }),
-  )
+    ...Array.from({ length: 20 }).map(
+      (_, i) => new Promise((resolve) => setTimeout(resolve, (i + 1) * 1000)),
+    ),
+  ])
 
   const successful = results.filter(
     (result): result is PromiseFulfilledResult<WebPush.SendResult> =>
