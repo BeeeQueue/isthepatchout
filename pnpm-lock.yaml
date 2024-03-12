@@ -55,8 +55,8 @@ devDependencies:
     specifier: 4.0.1
     version: 4.0.1(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3)
   '@morev/vue-transitions':
-    specifier: 2.3.6
-    version: 2.3.6(rollup@2.79.1)(vue@3.4.21)
+    specifier: 3.0.2
+    version: 3.0.2(rollup@2.79.1)(vue@3.4.21)
   '@nuxtjs/google-fonts':
     specifier: 3.1.3
     version: 3.1.3(rollup@2.79.1)
@@ -2029,24 +2029,25 @@ packages:
       - supports-color
     dev: true
 
-  /@morev/utils@2.8.1:
-    resolution: {integrity: sha512-q++LKjbWTUt8cZIvnDLUnt+6LXsgiUmfW5S3kaPST4bR/FXhoU87hwua9DfgqW6ht11CwgOyGeQ14ktV51somw==}
+  /@morev/utils@3.7.0:
+    resolution: {integrity: sha512-NRwoiyTTkD3AeWuCVxtvWE7KNVJGvvnJQH6QLSR2MBfSOgLGzjPv9NplYA7/iBsdMRcFBzxqa5oq6MNfeTlVFQ==}
     dependencies:
       fast-copy: 3.0.1
       fast-equals: 5.0.1
       ohash: 1.1.3
-      type-fest: 4.9.0
+      type-fest: 4.12.0
     dev: true
 
-  /@morev/vue-transitions@2.3.6(rollup@2.79.1)(vue@3.4.21):
-    resolution: {integrity: sha512-a6nOExEDVHD11wjpX5r/PJf8u9ziSwrlp16SaNJl2Gyehp6UlEkFx0aZJNZhSWnn7gOaQFzJvIqfx82p9tzqxA==}
+  /@morev/vue-transitions@3.0.2(rollup@2.79.1)(vue@3.4.21):
+    resolution: {integrity: sha512-4KviwLrU50nvp8Y+hSK5dPrtNF86wmcmCtXExdT5MGTnTeD/EgLNW5LEU5jlGScPyDNzps+ZcKuQBZiq6IJ3tA==}
+    engines: {node: '>= 18.0.0'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
       vue: ^2.6.14 || >=3
     dependencies:
-      '@morev/utils': 2.8.1
-      '@nuxt/kit': 3.9.3(rollup@2.79.1)
+      '@morev/utils': 3.7.0
+      '@nuxt/kit': 3.10.3(rollup@2.79.1)
       vue: 3.4.21(typescript@5.3.3)
     transitivePeerDependencies:
       - rollup
@@ -9982,8 +9983,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.9.0:
-    resolution: {integrity: sha512-KS/6lh/ynPGiHD/LnAobrEFq3Ad4pBzOlJ1wAnJx9N4EYoqFhMfLIBjUT2UEx4wg5ZE+cC1ob6DCSpppVo+rtg==}
+  /type-fest@4.12.0:
+    resolution: {integrity: sha512-5Y2/pp2wtJk8o08G0CMkuFPCO354FGwk/vbidxrdhRGZfd0tFnb4Qb8anp9XxXriwBgVPjdWbKpGl4J9lJY2jQ==}
     engines: {node: '>=16'}
     dev: true
 
