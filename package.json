@@ -39,7 +39,7 @@
     "fathom-client": "3.6.0",
     "fetch-unfiller": "0.2.0",
     "p-queue": "8.0.1",
-    "pino": "8.19.0",
+    "pino": "9.2.0",
     "remeda": "1.46.2"
   },
   "devDependencies": {
